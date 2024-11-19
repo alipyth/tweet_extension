@@ -1,13 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tweet Scraper - By Ali Jahani</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      background: #1a1a1a;
+      border: 1px solid #444;
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    }
+
+    h3 {
+      margin: 0 0 20px;
+      font-size: 1.5em;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    label {
+      font-size: 1em;
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+
+    input[type="number"] {
+      width: calc(100% - 20px);
+      padding: 10px;
+      font-size: 1em;
+      margin: 10px 0;
+      border: 1px solid #444;
+      border-radius: 5px;
+      background-color: #111;
+      color: #fff;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      font-size: 1em;
+      font-weight: bold;
+      color: #fff;
+      background-color: #444;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #555;
+    }
+
+    button:active {
+      background-color: #666;
+    }
+
+    footer {
+      margin-top: 20px;
+      font-size: 0.9em;
+      color: #888;
+    }
+
+    footer a {
+      color: #888;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+  </style>
 </head>
 <body>
-  <h3>Tweet Scraper- By Ali Jahani</h3>
-  <label for="scrollLimit">Scroll Limit:</label>
-  <input type="number" id="scrollLimit" placeholder="e.g., 10" />
-  <button id="startScraping">Start Scraping</button>
+  <div class="container">
+    <h3>X Scraper</h3>
+    <label for="scrollLimit">Scroll Limit:</label>
+    <input type="number" id="scrollLimit" placeholder="e.g., 10" />
+    <button id="startScraping">Start Scraping</button>
+    <footer>
+      <p>Powered by <a href="https://jahaniwww.com" target="_blank">Ali Jahani</a></p>
+    </footer>
+  </div>
   <script src="popup.js"></script>
 </body>
 </html>
